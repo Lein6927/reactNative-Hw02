@@ -1,0 +1,29 @@
+<NavigationContainer>
+                //複製用
+
+
+    <Tab.Navigator
+        initialRouteName={homeName}
+        screenOptions={({ route }) => ({
+            tabBarIcon: ({ focus, color, size }) => {
+                let iconName;
+                let rn = route.name;
+                if (rn === homeName) {
+                    iconName = focus ? 'home' : 'home-outline';
+                }
+
+                return <Ionicons name={iconName} size={size} color={color} />;
+            },
+        })}
+        tabBarOptions={{
+            activeTintColor: 'purple',
+            inactiveTintColor: 'grey',
+            labelStyle: { paddingBottom: 10, fontSize: 10 },
+            style: { padding: 10, height: 70 }
+        }}
+    >
+
+
+        <Tab.Screen name={homeName} component={HomeScreen} />
+    </Tab.Navigator>
+</NavigationContainer>

@@ -1,0 +1,48 @@
+//20230522 備份
+/*
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, Button } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import {Navigator} from 'react-native';
+//import Page1 from './Page1';
+//import Page2 from './Page2';
+
+const Stack = createStackNavigator();
+function Page1({ navigation }) {
+  return (
+    <Button
+      title="Go to Page2"
+      onPress={() => navigation.navigate('Page2')}
+    />
+  );
+}
+function Page2({navigation}){
+  return(
+    <Button title='Go to Page1'
+    onPress={()=> navigation.navigate('Page1')}/>
+  );
+}
+export default function App() {
+  return (
+    <NavigationContainer>
+      <View style={styles.container}>
+        <Stack.Screen name='Page1' component={Page1} title='page1'/>
+        <Text>123</Text>
+        <Stack.Screen name='Page2' component={Page2} />
+        <Text>Open up App.js to start working on your app!</Text>
+        <StatusBar style="auto" />
+      </View>
+    </NavigationContainer>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+*/
