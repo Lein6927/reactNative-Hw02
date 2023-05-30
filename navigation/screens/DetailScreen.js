@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text,TextInput } from 'react-native';
+import { View, Text, TextInput } from 'react-native';
 
 
 export default function DetailScreen({ navigation }) {
@@ -37,6 +37,17 @@ export default function DetailScreen({ navigation }) {
             //keyboardType="numeric"
             />
             <Text style={[styles.pText, { fontFamily: 'jf-font' }]}>您的手機號碼:{inputValue}</Text>
+            
+            <TouchableOpacity
+                style={styles.button}
+                title="確認"
+                onPress={handleSubmit}>
+                <Text style={styles.buttonText}>確認</Text>
+
+            </TouchableOpacity>
+
+            {error ? <Text style={styles.error}>{error}</Text> : null}
+
         </View>
     )
 }
