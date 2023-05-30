@@ -1,11 +1,4 @@
-import * as React from 'react';
-import { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Image } from 'react-native';
-
-
-export default function HomeScreen({ navigation }) {
-
-    const [inputValue, setInputValue] = useState('');
+ const [inputValue, setInputValue] = useState('');
     const [error, setError] = useState('');
 
 
@@ -22,13 +15,9 @@ export default function HomeScreen({ navigation }) {
             console.log('成功')
         }
     };
-
     return (
         <View style={styles.content}>
-            <Image style={styles.image} source={{ uri: 'https://images.plurk.com/3v2pCeK4ABEs7wg3dPjZwI.png' }}></Image>
-            <Text style={styles.h2Text}>來一杯咖啡吧</Text>
-            <Text style={styles.pText}>歡迎光臨，來一杯咖啡吧</Text>
-            <Text style={styles.pText}>如要預約請填寫您的手機號碼，謝謝您</Text>
+
             <TextInput
                 title='手機號碼'
                 style={styles.inputText}
@@ -57,25 +46,6 @@ const styles = StyleSheet.create({
     content: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
-    },
-    h2Text: { //標題字
-        color: '#A6695F',
-        fontSize: 30,
-        fontFamily: '',
-        marginBottom: 5,
-
-    },
-    pText: { //內文文章
-        color: '#7F4F21',
-        fontSize: 18,
-    },
-
-    image: {
-        width: 240,
-        height: 180,
-        resizeMode: 'stretch',
-        marginLeft: 20,
     },
     inputText: {   //輸入框
         borderWidth: 1,

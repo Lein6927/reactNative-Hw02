@@ -12,9 +12,9 @@ import SettingsScreen from './screens/SettingsScreen';
 
 
 //screen name
-const homeName = 'Home';
-const detailName = 'Detail';
-const settingsName = 'Settings';
+const homeName = '首頁';
+const detailName = '詳細資訊';
+const settingsName = '設定';
 
 //tab bar
 const Tab = createBottomTabNavigator();
