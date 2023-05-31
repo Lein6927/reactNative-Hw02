@@ -1,5 +1,5 @@
 # reactNative-Hw02
-### 開新專案-指令:
+### 開新專案需先輸入的指令:
 
 npm add @react-navigation/native
 
