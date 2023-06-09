@@ -26,7 +26,7 @@ function MainContainer() {
             
                 <Tab.Navigator
                     initialRouteName={homeName}
-                    screenOptions={({ route }) => ({
+                    screenOptions={({ route }) => ({ //要導入icon用的
                         tabBarIcon: ({ focused, color, size }) => {
                             let iconName;
                             let rn = route.name;
